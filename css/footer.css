@@ -15,11 +15,6 @@
     font-weight: 300;
 }
 
-.footer-info__description a {
-    color: var(--branco);
-    cursor: pointer;
-}
-
 .footer-socials {
     padding-top: 1em;
 }
@@ -39,7 +34,8 @@
     width: 30px;
 }
 
-.footer-socials__link {
+.footer-socials__link,
+.footer-info__link-whatsapp {
     color: var(--branco);
     cursor: pointer;
 }
@@ -55,3 +51,4 @@ hr {
     color: var(--azul);
 
 }
+
