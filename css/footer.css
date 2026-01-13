@@ -15,6 +15,11 @@
     font-weight: 300;
 }
 
+.footer-info__description a {
+    color: var(--branco);
+    cursor: pointer;
+}
+
 .footer-socials {
     padding-top: 1em;
 }
@@ -48,4 +53,5 @@ hr {
     text-align: center;
     margin-block: 1em;
     color: var(--azul);
+
 }
