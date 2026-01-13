@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Família Lima</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+
+        <div class="container">
+
+            <input type="checkbox" id="menu" class="container__botao">
+
+            <label for="menu">
+                <span class="cabecalho__menu-hamburguer"></span>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo"><span class="nome-vermelho">Família</span> <span class="nome-amarelo">Lima</span></li>
+                <li class="lista-menu__item">
+                    <a href="#home" class="lista-menu__link">Home</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#favoritas" class="lista-menu__link">Nossas Favoritas</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#contato" class="lista-menu__link">Contato</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link lista-menu__botao">Pedir Agora</a>
+                </li>
+            </ul>
+
+            <img src="img/pizza-logo.svg" alt="Logo da AluraBooks">
+
+        </div>
+    </header>
+
+    <section id="home" class="capa">
+        <div class="container conteudo-capa">
+            <h1 class="conteudo-capa__titulo">A verdadeira pizza artesanal na sua mesa.</h1>
+            <p class="conteudo-capa__texto">Ingredientes selecionados e massa fermentada naturalmente por 48h.</p>
+            <a href="#menu" class="btn-main">Ver Cardápio</a>
+        </div>
+    </section>
+
+    <section id="favoritas" class="favoritas">
+        <h2 class="favoritas-title">Nossas Favoritas</h2>
+        <div class="pizza-grid">
+            <article class="pizza-card">
+                <img src="img/pizza-1.jpg" alt="Imagem de uma pizza" class="pizza-card__image">
+                <h3 class="pizza-card__title">Calabresa</h3>
+                <p class="pizza-card__description">Fatias selecionadas de linguiça calabresa sobre uma camada generosa de muçarela derretida, finalizada com rodelas de cebola, orégano e azeitonas sobre nossa exclusiva massa artesanal.</p>
+                <p class="pizza-card__price">R$ 55,00</p>
+            </article>
+            <article class="pizza-card">
+                <img src="img/pizza-2.jpg" alt="Imagem de uma pizza" class="pizza-card__image">
+                <h3 class="pizza-card__title">Portuguesa</h3>
+                <p class="pizza-card__description">A clássica combinação de presunto, muçarela, ovos, ervilhas e cebolas frescas, harmonizados com o toque especial de pimentão e azeitonas pretas sobre uma massa artesanal impecável.</p>
+                <p class="pizza-card__price">R$ 48,00</p>
+            </article>
+            <article class="pizza-card">
+                <img src="img/pizza-3.jpg" alt="Imagem de uma pizza" class="pizza-card__image">
+                <h3 class="pizza-card__title">Frango com catupiry</h3>
+                <p class="pizza-card__description">O equilíbrio perfeito entre o frango desfiado temperado com ervas finas e a cremosidade inconfundível do Catupiry, servidos sobre uma massa dourada e crocante na medida certa.</p>
+                <p class="pizza-card__price">R$ 62,00</p>
+            </article>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3 class="footer-info__title">Pizzaria Família Lima</h3>
+                <p class="footer-info__description">Estrada de Sapiatiba - Sapeatiba Mirim</p>
+                <p class="footer-info__description">WhatsApp: (22) 99251-6785</p>
+            </div>
+            <div class="footer-socials">
+                <p class="footer-socials__description">Siga-nos:</p>
+                <div class="footer-socials__container">
+                    <img class="footer-socials__instagram" src="img/logo-instagram.png" alt="Logo Instagram">
+                    <a class="footer-socials__link" href="https://www.instagram.com/pizzaria.familialima">Instagram</a>
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <p class="footer-description">&copy; 2026 Pizzaria Família Lima. Todos os direitos reservados.</p>
+        <p class="footer-description">Desenvolvido por <a href="https://github.com/jonasnunees" target="_blank">Jonas Nunes</a></p>
+    </footer>
+</body>
+</html>
