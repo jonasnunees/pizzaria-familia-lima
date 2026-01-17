@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzaria Família Lima</title>
+    <!-- SWIPER JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <!-- ESTILOS CSS -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -30,11 +33,12 @@
                     <a href="#contato" class="lista-menu__link">Contato</a>
                 </li>
                 <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link lista-menu__botao">Pedir Agora</a>
+                    <a href="https://wa.me/5522992516785" class="lista-menu__link lista-menu__botao">Pedir Agora</a>
                 </li>
             </ul>
 
             <img class="pizza-logo" src="img/pizza-logo.svg" alt="Pizza logo">
+            <p class="container__texto">Pizzaria <span class="nome-vermelho">Familia</span> <span class="nome-amarelo">Lima</span></p>
 
         </div>
     </header>
@@ -47,27 +51,41 @@
         </div>
     </section>
 
-    <section id="favoritas" class="favoritas">
-        <h2 class="favoritas-title">Nossas Favoritas</h2>
-        <div class="pizza-grid">
-            <article class="pizza-card">
-                <img src="img/pizza-1.jpg" alt="Imagem de uma pizza" class="pizza-card__image">
-                <h3 class="pizza-card__title">Calabresa</h3>
-                <p class="pizza-card__description">Fatias selecionadas de linguiça calabresa sobre uma camada generosa de muçarela derretida, finalizada com rodelas de cebola, orégano e azeitonas sobre nossa exclusiva massa artesanal.</p>
-                <p class="pizza-card__price">R$ 55,00</p>
-            </article>
-            <article class="pizza-card">
-                <img src="img/pizza-2.jpg" alt="Imagem de uma pizza" class="pizza-card__image">
-                <h3 class="pizza-card__title">Portuguesa</h3>
-                <p class="pizza-card__description">A clássica combinação de presunto, muçarela, ovos, ervilhas e cebolas frescas, harmonizados com o toque especial de pimentão e azeitonas pretas sobre uma massa artesanal impecável.</p>
-                <p class="pizza-card__price">R$ 48,00</p>
-            </article>
-            <article class="pizza-card">
-                <img src="img/pizza-3.jpg" alt="Imagem de uma pizza" class="pizza-card__image">
-                <h3 class="pizza-card__title">Frango com catupiry</h3>
-                <p class="pizza-card__description">O equilíbrio perfeito entre o frango desfiado temperado com ervas finas e a cremosidade inconfundível do Catupiry, servidos sobre uma massa dourada e crocante na medida certa.</p>
-                <p class="pizza-card__price">R$ 62,00</p>
-            </article>
+        <section class="carrossel">
+
+        <h2 class="carrossel__titulo">Nossas Favoritas</h2>
+
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="img/pizza-1.svg" alt="Imagem de uma pizza">
+                        <h3 class="pizza-card__title">Calabresa</h3>
+                        <p class="pizza-card__description">Fatias selecionadas de linguiça calabresa sobre uma camada generosa de muçarela derretida, finalizada com rodelas de cebola, orégano e azeitonas sobre nossa exclusiva massa artesanal.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/pizza-2.svg" alt="Imagem de uma pizza">
+                        <h3 class="pizza-card__title">Portuguesa</h3>
+                        <p class="pizza-card__description">A clássica combinação de presunto, muçarela, ovos, ervilhas e cebolas frescas, harmonizados com o toque especial de pimentão e azeitonas pretas sobre uma massa artesanal impecável.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/pizza-3.svg" alt="Imagem de uma pizza">
+                        <h3 class="pizza-card__title">Frango com catupiry</h3>
+                        <p class="pizza-card__description">O equilíbrio perfeito entre o frango desfiado temperado com ervas finas e a cremosidade inconfundível do Catupiry, servidos sobre uma massa dourada e crocante na medida certa.</p>
+                    </div>
+                    ...
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>    
         </div>
     </section>
 
@@ -92,10 +110,17 @@
         <p class="footer-description">&copy; 2026 Pizzaria Família Lima. Todos os direitos reservados.</p>
         <p class="footer-description">Desenvolvido por <a href="https://github.com/jonasnunees" target="_blank">Jonas Nunes</a></p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        spaceBetween: 4,
+        slidesPerView: 1,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+        });
+    </script>
 </body>
-
 </html>
-
-
-
-

@@ -68,3 +68,8 @@
 .pizza-logo {
     width: 40px;
 }
+
+.container__texto {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.125em
+}
