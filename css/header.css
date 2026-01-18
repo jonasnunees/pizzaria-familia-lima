@@ -73,3 +73,28 @@
     font-family: var(--fonte-secundaria);
     font-size: 1.125em
 }
+
+@media screen and (min-width: 1024px) {
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .lista-menu-tablet {
+        display: flex;
+        margin-right: 2em;
+        gap: 2em;
+    }
+
+    .lista-menu-tablet__item {
+        display: flex;
+        align-items: center;
+    }
+
+    .lista-menu__link {
+        font-size: 1.2em;
+    }
+
+    .container__texto {
+        font-size: 1.5em;
+    }
+}

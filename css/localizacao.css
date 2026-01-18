@@ -22,3 +22,13 @@
 iframe {
     width: 100vw;
 }
+
+@media screen and (min-width: 1024px) {
+    .localizacao__titulo {
+        font-size: 2.5em;
+    }
+
+    .localizacao__texto {
+        font-size: 1.8em;
+    }
+}
