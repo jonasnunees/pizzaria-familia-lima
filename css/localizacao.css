@@ -1,0 +1,19 @@
+.localizacao {
+    height: 100%;
+    padding-top: 3em;
+    background-color: var(--branco);
+}
+
+.localizacao__titulo {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--azul);
+    text-align: center;
+}
+
+.localizacao__texto {
+    font-weight: 300;
+    color: var(--azul);
+    text-align: center;
+    padding: 2em 4em;
+}
