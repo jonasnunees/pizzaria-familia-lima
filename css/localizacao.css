@@ -17,3 +17,7 @@
     text-align: center;
     padding: 2em 4em;
 }
+
+iframe {
+    width: 100vw;
+}
