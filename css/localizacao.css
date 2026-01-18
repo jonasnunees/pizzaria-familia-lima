@@ -9,6 +9,7 @@
     font-weight: 700;
     color: var(--azul);
     text-align: center;
+    padding-inline: 1em;
 }
 
 .localizacao__texto {
