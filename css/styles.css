@@ -1,34 +1,62 @@
-/* IMPORT DOS ARQUIVOS CSS */
-@import url("header.css");
-@import url("capa.css");
+/* IMPORTAÇÃO DAS FONTES DO PROJETO */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* IMPORTAÇÃO DOS ARQUIVOS CSS */
+@import url("cabecalho.css");
+@import url("inicio.css");
+@import url("menu.css");
+@import url("avaliacoes.css");
 @import url("footer.css");
-@import url("carrossel.css");
-@import url("localizacao.css");
-
-/* GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Montserrat:wght@100..900&display=swap");
-
-/* RETIRANDO O SUBLINHADO */
-* {
-    text-decoration: none;
-}
+@import url("back-to-top.css");
+@import url("video-banner.css");
+@import url("overflow-fix.css");
 
 /* VARIÁVEIS CSS */
 :root {
-    --cor-de-fundo: #EBECEE;
-    --branco: #FFFFFF;
-    --vermelho: #e74c3c;
-    --amarelo: #f1c40f;
-    --azul: #2c3e50;
-    --fonte-principal: "Poppins", sans-serif;
-    --fonte-secundaria: "Carter One", system-ui;
+    --fonte-principal: "Urbanist", sans-serif;
+    --background-body: #fff9ea;
+    --color-logo: #e9a209;
+    --color-link: #1d1d1dad;
+    --color-link-active: #ffe100;
+    --color-titulo: #1d1d1d;
+    --btn-background: #ffcb45;
+    --color-pizza-descricao: #434343;
+    --shadow: rgba(0, 0, 0, .1);
 }
 
-/* ESTILOS PADRÃO DO CORPO DA PÁGINA */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: var(--cor-de-fundo);
     font-family: var(--fonte-principal);
-    font-size: 1em;
-    font-weight: 400;
+    background-color: var(--background-body);
+}
+
+section {
+    padding: 28px 8%;
+}
+
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--btn-background);
+    border-radius: 12px;
+    padding: 10px 14px;
+    box-shadow: 0px 0px 10px 2px var(--shadow);
+    cursor: pointer;
+    transition: background-color .3s ease;
+    text-decoration: none;
+    color: #1d1d1d;
+    font-weight: 600;
+}
+
+.btn-default:hover {
+    background-color: #f8d477;
+}
+
+.fa-star {
+    color: var(--color-logo);
 }

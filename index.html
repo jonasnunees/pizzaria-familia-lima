@@ -3,148 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzaria Família Lima</title>
-    <!-- SWIPER JS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
-    <!-- ESTILOS CSS -->
+    <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- IMPORTAÇÃO DO FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- IMPORTAÇÃO DO JQUERY -->
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="text/javascript"></script>
+    <!-- IMPORTAÇÃO DO SCROLLREVEAL -->
+     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <header class="cabecalho">
 
-        <div class="container">
+        <nav class="navbar">
 
-            <input type="checkbox" id="menu" class="container__botao">
+            <div class="nav__logo">
+                <i class="fa-solid fa-pizza-slice"></i>
+                <span>Pizzaria Familia Lima</span>
+            </div>
 
-            <label for="menu">
-                <span class="cabecalho__menu-hamburguer"></span>
-            </label>
-
-            <ul class="lista-menu">
-                <li class="lista-menu__titulo"><span class="nome-vermelho">Família</span> <span class="nome-amarelo">Lima</span></li>
-                <li class="lista-menu__item">
-                    <a href="#home" class="lista-menu__link">Home</a>
+            <ul class="nav__list">
+                <li class="nav__list-item active">
+                    <a href="#inicio">Início</a>
                 </li>
-                <li class="lista-menu__item">
-                    <a href="#favoritas" class="lista-menu__link">Nossas Favoritas</a>
+                <li class="nav__list-item">
+                    <a href="#cardapio">Cardápio</a>
                 </li>
-                <li class="lista-menu__item">
-                    <a href="#contato" class="lista-menu__link">Contato</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="https://wa.me/5522992516785" class="lista-menu__link lista-menu__botao">Pedir Agora</a>
+                <li class="nav__list-item">
+                    <a href="#avaliacoes">Avaliações</a>
                 </li>
             </ul>
 
-            <img class="pizza-logo" src="img/pizza-logo.svg" alt="Pizza logo">
-            <p class="container__texto">Pizzaria <span class="nome-vermelho">Familia</span> <span class="nome-amarelo">Lima</span></p>
+            <a href="https://wa.me/5522992516785" target="_blank" class="btn-default">
+                Peça aqui
+            </a>
 
+            <button class="mobile__btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </nav>
+
+        <div class="mobile__menu">
+
+            <ul class="mobile-nav__list active">
+                <li class="nav__list-item">
+                    <a href="#inicio">Início</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#cardapio">Cardápio</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#avaliacoes">Avaliações</a>
+                </li>
+            </ul>
+
+            <a href="https://wa.me/5522992516785" target="_blank" class="btn-default">
+                Peça aqui
+            </a>
         </div>
-
-        <ul class="lista-menu-tablet">
-                <li class="lista-menu-tablet__item">
-                    <a href="#home" class="lista-menu__link">Home</a>
-                </li>
-                <li class="lista-menu-tablet__item">
-                    <a href="#favoritas" class="lista-menu__link">Nossas Favoritas</a>
-                </li>
-                <li class="lista-menu-tablet__item">
-                    <a href="#contato" class="lista-menu__link">Contato</a>
-                </li>
-                <li class="lista-menu-tablet__item">
-                    <a href="https://wa.me/5522992516785" class="lista-menu__link lista-menu__botao">Pedir Agora</a>
-                </li>
-            </ul>
     </header>
 
-    <section id="home" class="capa">
-        <div class="container conteudo-capa">
-            <h1 class="conteudo-capa__titulo">A verdadeira pizza artesanal na sua mesa.</h1>
-            <p class="conteudo-capa__texto">Ingredientes selecionados e massa fermentada naturalmente por 48h.</p>
-            <a href="#menu" class="btn-main">Ver Cardápio</a>
-        </div>
-    </section>
+    <main class="content">
 
-        <section id="favoritas" class="carrossel">
+        <!-- Banner com vídeo e efeito parallax -->
+        <section id="video-banner" class="video-banner">
+            <div class="video-container">
+                <video autoplay muted loop playsinline class="video-background">
+                    <source src="video/banner-video.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos HTML5.
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+            <div class="video-content">
+                <h1 class="video-title">Pizzaria Família Lima</h1>
+                <p class="video-subtitle">Tradição e Sabor desde sempre</p>
+                <a href="#inicio" class="scroll-down">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </div>
+        </section>
 
-        <h2 class="carrossel__titulo">Nossas Favoritas</h2>
+        <section id="inicio" class="inicio">
+            <div class="shape"></div>
+            <div class="cta">
+                <h1 class="cta__titulo">O sabor que vai até <span>você</span></h1>
+                <p class="cta__descricao">Receitas tradicionais, massa crocante e coberturas generosas. A pizza perfeita está a apenas um pedido de distância.</p>
 
-        <!-- Slider main container -->
-        <div class="carrossel__container">
-            <div class="swiper">
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img src="img/pizza-1.svg" alt="Imagem de uma pizza">
-                        <h3 class="pizza-card__title">Calabresa</h3>
-                        <p class="pizza-card__description">Fatias selecionadas de linguiça calabresa sobre uma camada generosa de mussarela derretida, finalizada com rodelas de cebola, orégano e azeitonas sobre nossa exclusiva massa artesanal.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/pizza-2.svg" alt="Imagem de uma pizza">
-                        <h3 class="pizza-card__title">Portuguesa</h3>
-                        <p class="pizza-card__description">A clássica combinação de presunto, mussarela, ovos, ervilhas e cebolas frescas, harmonizados com o toque especial de pimentão e azeitonas pretas sobre uma massa artesanal impecável.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/pizza-3.svg" alt="Imagem de uma pizza">
-                        <h3 class="pizza-card__title">Frango com catupiry</h3>
-                        <p class="pizza-card__description">O equilíbrio perfeito entre o frango desfiado temperado com ervas finas e a cremosidade inconfundível do Catupiry, servidos sobre uma massa dourada e crocante na medida certa.</p>
-                    </div>
-                    ...
+                <div class="cta__botoes">
+                    <a href="#" class="btn-default">Ver cardápio</a>
+                    <a href="tel:+5522992516785" target="_blank" class="phone__button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (22) 99251-6785
+                    </a>
                 </div>
 
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-            </div>    
-        </div>
-    </section>
-
-    <section class="localizacao">
-
-        <h2 class="localizacao__titulo">Venha até a gente e traga sua família!</h2>
-        <p class="localizacao__texto">Estamos te esperando, será um prazer recebê-los.</p>
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.6937579088735!2d-42.19547209007013!3d-22.813808734466562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x970de84448bb27%3A0x7626598ad67255ff!2sPizzaria%20Fam%C3%ADlia%20Lima!5e0!3m2!1spt-BR!2sbr!4v1768751955737!5m2!1spt-BR!2sbr" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    </section>
-
-    <footer id="contato">
-        <div class="footer-content">
-            <div class="footer-info">
-                <h3 class="footer-info__title">Pizzaria Família Lima</h3>
-                <p class="footer-info__description">Estrada de Sapiatiba - Sapeatiba Mirim</p>
-                <p class="footer-info__description">WhatsApp: <a class="footer-info__link-whatsapp" href="https://wa.me/5522992516785">(22) 99251-6785</a></p>
-            </div>
-            <div class="footer-socials">
-                <p class="footer-socials__description">Siga-nos:</p>
-                <div class="footer-socials__container">
-                    <img class="footer-socials__instagram" src="img/logo-instagram.png" alt="Logo Instagram">
-                    <a class="footer-socials__link" href="https://www.instagram.com/pizzaria.familialima">Instagram</a>
+                <div class="social-media-botao">
+                    <a href="https://wa.me/5522992516785" target="_blank" class="btn-default">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/pizzaria.familialima" target="_blank" class="btn-default">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
                 </div>
             </div>
+
+            <div class="banner">
+                <img src="img/hero.png" alt="Imagem">
+            </div>
+        </section>
+
+        <section class="menu">
+            <h2 class="section__titulo">Cardápio</h2>
+            <h3 class="section__subtitulo">Nossas Favoritas</h3>
+
+            <div class="pizzas">
+                <div class="pizza">
+                    <div class="pizza-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/dish.png" alt="Imagem" class="pizza-image">
+                    <h3 class="pizza__titulo">Calabresa</h3>
+                    <p class="pizza__descricao">Fatias selecionadas de linguiça calabresa sobre uma camada generosa de mussarela derretida, finalizada com rodelas de cebola, orégano e azeitonas sobre nossa exclusiva massa artesanal.</p>
+                    <div class="pizza-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                </div>
+
+                <div class="pizza">
+                    <div class="pizza-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/dish2.png" alt="Imagem" class="pizza-image">
+                    <h3 class="pizza__titulo">Portuguesa</h3>
+                    <p class="pizza__descricao">A clássica combinação de presunto, mussarela, ovos, ervilhas e cebolas frescas, harmonizados com o toque especial de pimentão e azeitonas pretas sobre uma massa artesanal impecável.</p>
+                    <div class="pizza-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                </div>
+
+                <div class="pizza">
+                    <div class="pizza-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/dish3.png" alt="Imagem" class="pizza-image">
+                    <h3 class="pizza__titulo">Frango com catupiry</h3>
+                    <p class="pizza__descricao">O equilíbrio perfeito entre o frango desfiado temperado com ervas finas e a cremosidade inconfundível do Catupiry, servidos sobre uma massa dourada e crocante na medida certa.</p>
+                    <div class="pizza-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                </div>
+
+                <div class="pizza">
+                    <div class="pizza-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="img/dish4.png" alt="Imagem" class="pizza-image">
+                    <h3 class="pizza__titulo">Camarão</h3>
+                    <p class="pizza__descricao">A sofisticação do mar em sua mesa: camarões suculentos cuidadosamente limpos e temperados, combinados com a cremosidade do queijo derretido e um toque aromático de alho e ervas finas.</p>
+                    <div class="pizza-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="avaliacoes" class="avaliacoes">
+
+            <img src="img/chef.png" alt="Imagem" class="avaliacoes__chef">
+
+            <div class="avaliacoes__container">
+                <h2 class="section__titulo">Depoimentos</h2>
+                <h3 class="section__subtitulo">O que os clientes falam sobre nós</h3>
+
+                <div class="feedbacks">
+                    <div class="feedback">
+                        <img src="img/avatar.png" alt="Imagem" class="feedback__avatar">
+
+                        <div class="feedback__container">
+                            <h3 class="feedback__titulo">
+                                Cliente 1
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </h3>
+                            <p class="feedback__descricao">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati deleniti, nemo tempora sunt, officia cumque deserunt quasi officiis unde quas, incidunt et voluptate eveniet minus assumenda doloremque eius? Commodi, modi."</p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="img/avatar.png" alt="Imagem" class="feedback__avatar">
+
+                        <div class="feedback__container">
+                            <h3 class="feedback__titulo">
+                                Cliente 2
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </h3>
+                            <p class="feedback__descricao">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati deleniti, nemo tempora sunt, officia cumque deserunt quasi officiis unde quas, incidunt et voluptate eveniet minus assumenda doloremque eius? Commodi, modi."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://g.page/r/Cf9VctaKWSZ2EAE/review" target="_blank" class="btn-default">
+                    <i class="fa-brands fa-google"></i>Ver mais avaliações
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <img src="img/wave.svg" alt="Imagem">
+
+        <div class="footer__itens">
+            <span class="copyright">&copy 2026 Pizzaria Família Lima</span>
+            <div class="footer__links">
+                <a href="https://wa.me/5522992516785" target="_blank" class="btn-default">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/pizzaria.familialima" target="_blank" class="btn-default">
+                        <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
         </div>
-
-        <hr/>
-
-        <p class="footer-description">&copy; 2026 Pizzaria Família Lima. Todos os direitos reservados.</p>
-        <p class="footer-description">Desenvolvido por <a href="https://github.com/jonasnunees" target="_blank">Jonas Nunes</a></p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-        spaceBetween: 4,
-        slidesPerView: 1,
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-        },
-        });
-    </script>
+    <!-- Botão voltar ao topo -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>

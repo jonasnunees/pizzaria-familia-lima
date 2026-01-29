@@ -1,0 +1,18 @@
+/* Correção de overflow horizontal */
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Garantir que todas as sections não extrapolem */
+section {
+    max-width: 100%;
+    overflow-x: hidden;
+}

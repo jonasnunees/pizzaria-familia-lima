@@ -1,83 +1,31 @@
-.footer-content {
-    background-color: var(--azul);
-    color: var(--branco);
-    padding: 2.5em 0;
-    text-align: center;
-    line-height: 1.5;
+footer {
+    background-color: #ffe8b4;
 }
 
-.footer-info__title {
-    font-size: 1.5em;
-    font-weight: 700;
-}
-
-.footer-info__description {
-    font-weight: 300;
-}
-
-.footer-socials {
-    padding-top: 1em;
-}
-
-.footer-socials__description {
-    font-weight: 500;
-    padding-bottom: 1em;
-}
-
-.footer-socials__container {
+.footer__itens {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 0px 8% 24px 8%;
 }
 
-.footer-socials__instagram {
-    width: 30px;
+.footer__links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
 }
 
-.footer-socials__link,
-.footer-info__link-whatsapp {
-    color: var(--branco);
-    cursor: pointer;
+.copyright {
+    color: #1d1d1d;
+    font-weight: 500;
 }
 
-hr {
-    margin: 0;
-}
+@media screen and (max-width: 442px) {
 
-.footer-description {
-    font-weight: 300;
-    text-align: center;
-    margin-block: 1em;
-    color: var(--azul);
-
-}
-
-@media screen and (min-width: 1024px) {
-    .footer-info__title {
-        font-size: 2.5em;
+    .footer__itens {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
     }
 
-    .footer-info__description {
-        font-size: 1.8em;
-    }
-
-    .footer-socials__description,
-    .footer-socials__link {
-        font-size: 1.5em;
-    }
-
-    .footer-socials__description {
-        display: block;
-        width: 50%;
-        margin: auto;
-        border-bottom: 1px solid var(--branco);
-    }
-
-    .footer-socials__instagram {
-        width: 80px;
-    }
-
-    .footer-description {
-        font-size: 1.5em;
-    }
 }
