@@ -92,7 +92,7 @@ $(document).ready(function() {
 
     ScrollReveal().reveal('.footer__itens', {
         origin: 'bottom',
-        duration: 2000,
+        duration: 1000,
         distance: '20%',
         reset: true
     });
