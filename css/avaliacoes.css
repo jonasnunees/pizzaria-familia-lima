@@ -117,5 +117,11 @@
         font-size: 2.2em;
     }
 
+    .feedback__avatar-1,
+    .feedback__avatar-2 {
+        width: 100px;
+        height: 100px;
+    }
+
 }
 

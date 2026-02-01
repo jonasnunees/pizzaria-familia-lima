@@ -75,7 +75,7 @@
     .mobile__btn {
         display: block;
         border: none;
-        background-color: #1d1d1d;
+        background-color: transparent;
         font-size: 1.5rem;
         cursor: pointer;
     }
